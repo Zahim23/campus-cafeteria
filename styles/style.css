@@ -1,0 +1,14 @@
+/* ---- Menu page (menu.html) ---- */
+.menu-table { width: 100%; border-collapse: collapse; }
+.menu-table th, .menu-table td {
+  text-align: left;
+  padding: 0.5rem 0.4rem;
+  border-bottom: 1px solid #fed7aa;
+}
+.menu-table th { color: #7c2d12; }
+.price { font-weight: 700; color: #c2410c; white-space: nowrap; }
+
+/* ---- Menu responsive (edit the values to make it yours) ---- */
+@media (max-width: 480px) {
+  .menu-table th, .menu-table td { font-size: 0.9rem; padding: 0.4rem 0.2rem; }
+}
