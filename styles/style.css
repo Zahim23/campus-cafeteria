@@ -1,0 +1,31 @@
+/* ---- Order page (order.html) ---- */
+.steps { counter-reset: step; list-style: none; }
+.steps li {
+  counter-increment: step;
+  position: relative;
+  padding: 0.8rem 0.8rem 0.8rem 3.2rem;
+  margin-bottom: 0.8rem;
+  background: #fff;
+  border: 1px solid #fed7aa;
+  border-radius: 8px;
+}
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0.8rem;
+  top: 0.7rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  background: #ea580c;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 700;
+}
+.note { background: #fef3c7; border-left: 4px solid #f59e0b; padding: 0.8rem; border-radius: 4px; }
+
+/* ---- Order responsive (edit the values to make it yours) ---- */
+@media (max-width: 480px) {
+  .steps li { padding-left: 2.8rem; }
+}
