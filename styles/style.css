@@ -1,0 +1,25 @@
+/* ---- Deals page (deals.html) ---- */
+.special-banner {
+  background: #7c2d12;
+  color: #fff;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.special-banner h2 { color: #fde68a; }
+.deal-card { border-top: 4px solid #ea580c; }
+.deal-price {
+  display: inline-block;
+  background: #ea580c;
+  color: #fff;
+  padding: 0.2rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* ---- Deals responsive (edit the values to make it yours) ---- */
+@media (max-width: 600px) {
+  .special-banner { padding: 0.8rem; }
+  .deal-price { font-size: 0.95rem; }
+}
